@@ -10,6 +10,10 @@ body {
     background-size: 100%;
 }
 
+.contianer-min-display {
+    display: none;
+}
+
 h1 {
     color: #fff;
     font-size: 35px;
@@ -87,6 +91,27 @@ h1 {
 
     100% {        
         box-shadow: 0 0 15px #fff;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    body {
+        background: #fff;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .contianer-min-display {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        text-align: center;
     }
 
 }
